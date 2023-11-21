@@ -19,6 +19,7 @@
     <Title>계명의대 PK 조추첨 프로그램</Title>
     <Version>0.0.1</Version>
     <Product>계명의대 PK 조추첨 프로그램</Product>
+    <PackageProjectUrl>https://github.com/djffkfl365/kmumed-pk-grouper</PackageProjectUrl>
   </PropertyGroup>
 
   <ItemGroup>
