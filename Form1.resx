@@ -1,0 +1,1212 @@
+﻿<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="&gt;&gt;genderRatio_NoHalfAndSingle.Name" xml:space="preserve">
+    <value>genderRatio_NoHalfAndSingle</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="numericUpDown1.TabIndex" type="System.Int32, mscorlib">
+    <value>27</value>
+  </data>
+  <data name="&gt;&gt;panel1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Label_DBFilePath.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dbFilePathTB.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;genderRatio_NoSingleRB.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;populationPerTeamLabel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;radioButton_mode2.Name" xml:space="preserve">
+    <value>radioButton_mode2</value>
+  </data>
+  <data name="&gt;&gt;Label_DBFilePath.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;loggingPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dontConsiderGenderRatioRB.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dbFilePathTB.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;StartButton.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="loggingUntilCycleLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>36</value>
+  </data>
+  <data name="&gt;&gt;populationPerTeamNum1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;populationPerTeamNum1.Name" xml:space="preserve">
+    <value>populationPerTeamNum1</value>
+  </data>
+  <data name="&gt;&gt;dontConsiderGenderRatioRB.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="button1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 399</value>
+  </data>
+  <data name="&gt;&gt;radioButton3.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;loggingLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;loggingUntilCycleLabel.Name" xml:space="preserve">
+    <value>loggingUntilCycleLabel</value>
+  </data>
+  <data name="totalPopulationUnitLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>314, 113</value>
+  </data>
+  <data name="&gt;&gt;populationPerTeamNum1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;loggingUntilCycleLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="dbFilePathTB.Location" type="System.Drawing.Point, System.Drawing">
+    <value>100, 75</value>
+  </data>
+  <data name="&gt;&gt;totalPopulationUnitLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="whenNoSingleRandomRB.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="numericUpDown1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>148, 161</value>
+  </data>
+  <data name="&gt;&gt;totalPopulationNumeric.Name" xml:space="preserve">
+    <value>totalPopulationNumeric</value>
+  </data>
+  <data name="&gt;&gt;numericUpDown2.Parent" xml:space="preserve">
+    <value>logSettingsPanel</value>
+  </data>
+  <data name="&gt;&gt;genderRatio_UniformRB.Name" xml:space="preserve">
+    <value>genderRatio_UniformRB</value>
+  </data>
+  <data name="&gt;&gt;whenNoSingleNoMoreThanHalfRB.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="delayLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>418, 364</value>
+  </data>
+  <data name="&gt;&gt;dbFilePath.Name" xml:space="preserve">
+    <value>dbFilePath</value>
+  </data>
+  <data name="genderRatio_NoHalfAndSingle.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="dbFilePathTB.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;whenNoSingleNoMoreThanHalfRB.Name" xml:space="preserve">
+    <value>whenNoSingleNoMoreThanHalfRB</value>
+  </data>
+  <data name="ModePanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>99, 12</value>
+  </data>
+  <data name="&gt;&gt;whenNoSingleLabel.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;considerSurgicalCopyNoRB.Name" xml:space="preserve">
+    <value>considerSurgicalCopyNoRB</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Form1</value>
+  </data>
+  <data name="genderRatioPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>31</value>
+  </data>
+  <data name="&gt;&gt;populationPerTeamNum2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="loggingPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>30</value>
+  </data>
+  <data name="&gt;&gt;considerSurgicalCopyYesRB.Parent" xml:space="preserve">
+    <value>considerSurgicalCopyPanel</value>
+  </data>
+  <data name="loggingOnRB.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="radioButton_mode1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>100, 12</value>
+  </data>
+  <data name="genderRatioLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>32</value>
+  </data>
+  <data name="&gt;&gt;logSettingsPanel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="logRichTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 469</value>
+  </data>
+  <data name="&gt;&gt;genderRatioLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="dbFilePath.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="&gt;&gt;loggingLabel.Parent" xml:space="preserve">
+    <value>settingPanel</value>
+  </data>
+  <data name="&gt;&gt;logSettingsPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="settingPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>34</value>
+  </data>
+  <data name="&gt;&gt;loggingDelayNum.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="loggingLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>30</value>
+  </data>
+  <data name="richTextBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="loggingOnRB.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
+  </data>
+  <data name="&gt;&gt;genderRatio_NoSingleRB.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="teamCountNumeric.TabIndex" type="System.Int32, mscorlib">
+    <value>27</value>
+  </data>
+  <data name="&gt;&gt;teamCountNumeric.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;teamCountLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>99, 12</value>
+  </data>
+  <data name="totalPopulationNumeric.TabIndex" type="System.Int32, mscorlib">
+    <value>27</value>
+  </data>
+  <data name="&gt;&gt;considerSurgicalCopyYesRB.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="genderRatioLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 183</value>
+  </data>
+  <data name="&gt;&gt;delayLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Label_Modes.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="loggingOnOffPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>99, 268</value>
+  </data>
+  <data name="&gt;&gt;loggingDelayNum.Parent" xml:space="preserve">
+    <value>logSettingsPanel</value>
+  </data>
+  <data name="loggingDelayNum.TabIndex" type="System.Int32, mscorlib">
+    <value>27</value>
+  </data>
+  <data name="radioButton2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>185, 12</value>
+  </data>
+  <data name="&gt;&gt;populationPerTeamLabel2.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="totalPopulationNumeric.Size" type="System.Drawing.Size, System.Drawing">
+    <value>120, 23</value>
+  </data>
+  <data name="&gt;&gt;richTextBox1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;loggingDelayLabel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="genderRatio_NoHalfOrMoreRB.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 30</value>
+  </data>
+  <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="StartButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 399</value>
+  </data>
+  <data name="&gt;&gt;populationPerTeamLabel2.Name" xml:space="preserve">
+    <value>populationPerTeamLabel2</value>
+  </data>
+  <data name="&gt;&gt;genderRatio_AllRandRB.Name" xml:space="preserve">
+    <value>genderRatio_AllRandRB</value>
+  </data>
+  <data name="loggingLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 273</value>
+  </data>
+  <data name="&gt;&gt;teamCountNumeric.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;delayLabel.Parent" xml:space="preserve">
+    <value>settingPanel</value>
+  </data>
+  <data name="&gt;&gt;loggingUntilCycleNum.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;considerSurgicalCopyNoRB.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="settingPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="&gt;&gt;populationPerTeamLabel2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;whenNoSingleLabel.Name" xml:space="preserve">
+    <value>whenNoSingleLabel</value>
+  </data>
+  <data name="&gt;&gt;genderRatio_NoHalfAndSingle.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="dontConsiderGenderRatioRB.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 5</value>
+  </data>
+  <data name="&gt;&gt;totalPopulationUnitLabel.Name" xml:space="preserve">
+    <value>totalPopulationUnitLabel</value>
+  </data>
+  <data name="&gt;&gt;genderRatio_NoHalfOrMoreRB.Name" xml:space="preserve">
+    <value>genderRatio_NoHalfOrMoreRB</value>
+  </data>
+  <data name="genderRatio_NoSingleRB.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;teamCountNumeric.Name" xml:space="preserve">
+    <value>teamCountNumeric</value>
+  </data>
+  <data name="dbFilePath.Location" type="System.Drawing.Point, System.Drawing">
+    <value>100, 40</value>
+  </data>
+  <data name="&gt;&gt;whenNoSinglePanel.Name" xml:space="preserve">
+    <value>whenNoSinglePanel</value>
+  </data>
+  <data name="teamCountLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>26</value>
+  </data>
+  <data name="&gt;&gt;teamCountLabel.Name" xml:space="preserve">
+    <value>teamCountLabel</value>
+  </data>
+  <data name="&gt;&gt;whenNoSingleRandomRB.Parent" xml:space="preserve">
+    <value>whenNoSinglePanel</value>
+  </data>
+  <data name="populationPerTeamLabel2.TabIndex" type="System.Int32, mscorlib">
+    <value>28</value>
+  </data>
+  <data name="&gt;&gt;genderRatio_NoHalfOrMoreRB.Parent" xml:space="preserve">
+    <value>genderRatioPanel</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>logSettingsPanel</value>
+  </data>
+  <data name="&gt;&gt;loggingOnRB.Name" xml:space="preserve">
+    <value>loggingOnRB</value>
+  </data>
+  <data name="&gt;&gt;logGroupBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;loggingPanel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="logSettingsPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>305, 268</value>
+  </data>
+  <data name="&gt;&gt;loggingDelayNum.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label2.Name" xml:space="preserve">
+    <value>label2</value>
+  </data>
+  <data name="&gt;&gt;loggingOffRB.Parent" xml:space="preserve">
+    <value>loggingOnOffPanel</value>
+  </data>
+  <data name="&gt;&gt;populationPerTeamNum2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="populationPerTeamNum1.TabIndex" type="System.Int32, mscorlib">
+    <value>27</value>
+  </data>
+  <data name="considerSurgicalCopyYesRB.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>7, 15</value>
+  </data>
+  <data name="&gt;&gt;ModePanel.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
+    <value>logSettingsPanel</value>
+  </data>
+  <data name="populationPerTeamLabel2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>480, 149</value>
+  </data>
+  <data name="&gt;&gt;radioButton_mode1.Parent" xml:space="preserve">
+    <value>ModePanel</value>
+  </data>
+  <data name="&gt;&gt;loggingDelayLabel.Name" xml:space="preserve">
+    <value>loggingDelayLabel</value>
+  </data>
+  <data name="considerSurgicalCopyNoRB.Location" type="System.Drawing.Point, System.Drawing">
+    <value>92, 3</value>
+  </data>
+  <data name="&gt;&gt;groupBox1.Name" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="considerSurgicalCopyLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 74</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBox1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;loggingDelayLabel.Parent" xml:space="preserve">
+    <value>logSettingsPanel</value>
+  </data>
+  <data name="&gt;&gt;radioButton_mode1.Name" xml:space="preserve">
+    <value>radioButton_mode1</value>
+  </data>
+  <data name="&gt;&gt;whenNoSingleRandomRB.Name" xml:space="preserve">
+    <value>whenNoSingleRandomRB</value>
+  </data>
+  <data name="&gt;&gt;numericUpDown1.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;genderRatioPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TotalPopulationLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="radioButton2.TabIndex" type="System.Int32, mscorlib">
+    <value>26</value>
+  </data>
+  <data name="genderRatio_NoHalfAndSingle.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 55</value>
+  </data>
+  <data name="&gt;&gt;Label_DBFilePath.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;logPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;radioButton_mode3.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;loggingLabel.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;Label_Modes.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;numericUpDown1.Name" xml:space="preserve">
+    <value>numericUpDown1</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="&gt;&gt;genderRatioLabel.Name" xml:space="preserve">
+    <value>genderRatioLabel</value>
+  </data>
+  <data name="logPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>35</value>
+  </data>
+  <data name="&gt;&gt;considerSurgicalCopyNoRB.Parent" xml:space="preserve">
+    <value>considerSurgicalCopyPanel</value>
+  </data>
+  <data name="populationPerTeamNum1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>404, 145</value>
+  </data>
+  <data name="&gt;&gt;considerSurgicalCopyLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="radioButton1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>100, 12</value>
+  </data>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="&gt;&gt;considerSurgicalCopyLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="logRichTextBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 5</value>
+  </data>
+  <data name="&gt;&gt;loggingUntilCycleNum.Parent" xml:space="preserve">
+    <value>logSettingsPanel</value>
+  </data>
+  <data name="&gt;&gt;panel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;populationPerTeamLabel1.Name" xml:space="preserve">
+    <value>populationPerTeamLabel1</value>
+  </data>
+  <data name="&gt;&gt;whenNoSinglePanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;loggingOnRB.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;loggingPanel.Name" xml:space="preserve">
+    <value>loggingPanel</value>
+  </data>
+  <data name="&gt;&gt;teamCountLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;radioButton1.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="loggingOnOffPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;logRichTextBox1.Name" xml:space="preserve">
+    <value>logRichTextBox1</value>
+  </data>
+  <data name="&gt;&gt;TotalPopulationLabel.Name" xml:space="preserve">
+    <value>TotalPopulationLabel</value>
+  </data>
+  <data name="loggingDelayLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>199, 5</value>
+  </data>
+  <data name="&gt;&gt;loggingDelayNum.Name" xml:space="preserve">
+    <value>loggingDelayNum</value>
+  </data>
+  <data name="&gt;&gt;logGroupBox.Name" xml:space="preserve">
+    <value>logGroupBox</value>
+  </data>
+  <data name="&gt;&gt;button1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;logPanel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;populationPerTeamNum2.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;TotalPopulationLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="logGroupBox.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;logRichTextBox.Name" xml:space="preserve">
+    <value>logRichTextBox</value>
+  </data>
+  <data name="&gt;&gt;button1.Name" xml:space="preserve">
+    <value>button1</value>
+  </data>
+  <data name="&gt;&gt;whenNoSingleLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;genderRatioPanel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="radioButton1.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="considerSurgicalCopyLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>30</value>
+  </data>
+  <data name="&gt;&gt;numericUpDown2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>MainForm</value>
+  </data>
+  <data name="&gt;&gt;radioButton_mode3.Parent" xml:space="preserve">
+    <value>ModePanel</value>
+  </data>
+  <data name="teamCountNumeric.Location" type="System.Drawing.Point, System.Drawing">
+    <value>100, 42</value>
+  </data>
+  <data name="&gt;&gt;genderRatio_UniformRB.Parent" xml:space="preserve">
+    <value>genderRatioPanel</value>
+  </data>
+  <data name="&gt;&gt;radioButton_mode1.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;button1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="whenNoSingleLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 5</value>
+  </data>
+  <data name="numericUpDown2.TabIndex" type="System.Int32, mscorlib">
+    <value>27</value>
+  </data>
+  <data name="delayLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>30</value>
+  </data>
+  <data name="&gt;&gt;radioButton_mode3.Name" xml:space="preserve">
+    <value>radioButton_mode3</value>
+  </data>
+  <data name="&gt;&gt;loggingPanel.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;genderRatio_UniformRB.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;groupBox1.Parent" xml:space="preserve">
+    <value>logPanel</value>
+  </data>
+  <data name="loggingUntilCycleNum.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 1</value>
+  </data>
+  <data name="groupBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;loggingOnOffPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;logPanel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;whenNoSingleRandomRB.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ModePanel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="loggingUntilCycleLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>63, 5</value>
+  </data>
+  <data name="Label_Modes.TabIndex" type="System.Int32, mscorlib">
+    <value>25</value>
+  </data>
+  <data name="&gt;&gt;logRichTextBox1.Parent" xml:space="preserve">
+    <value>logPanel</value>
+  </data>
+  <data name="&gt;&gt;teamCountNumeric.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;loggingOnOffPanel.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="genderRatio_AllRandRB.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="ModePanel.TabIndex" type="System.Int32, mscorlib">
+    <value>29</value>
+  </data>
+  <data name="&gt;&gt;numericUpDown2.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;dontConsiderGenderRatioRB.Name" xml:space="preserve">
+    <value>dontConsiderGenderRatioRB</value>
+  </data>
+  <data name="&gt;&gt;radioButton3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;openFileDialog1.Name" xml:space="preserve">
+    <value>openFileDialog1</value>
+  </data>
+  <data name="&gt;&gt;radioButton1.Name" xml:space="preserve">
+    <value>radioButton1</value>
+  </data>
+  <data name="logGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 12</value>
+  </data>
+  <data name="whenNoSinglePanel.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="considerSurgicalCopyPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>30</value>
+  </data>
+  <data name="&gt;&gt;populationPerTeamLabel1.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;settingPanel.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="&gt;&gt;loggingOnOffPanel.Name" xml:space="preserve">
+    <value>loggingOnOffPanel</value>
+  </data>
+  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;radioButton2.Name" xml:space="preserve">
+    <value>radioButton2</value>
+  </data>
+  <data name="loggingOffRB.Location" type="System.Drawing.Point, System.Drawing">
+    <value>92, 3</value>
+  </data>
+  <data name="&gt;&gt;logSettingsPanel.Parent" xml:space="preserve">
+    <value>settingPanel</value>
+  </data>
+  <data name="populationPerTeamLabel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>357, 149</value>
+  </data>
+  <data name="&gt;&gt;settingPanel.Name" xml:space="preserve">
+    <value>settingPanel</value>
+  </data>
+  <data name="&gt;&gt;loggingOffRB.Name" xml:space="preserve">
+    <value>loggingOffRB</value>
+  </data>
+  <data name="&gt;&gt;loggingUntilCycleNum.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;loggingUntilCycleLabel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>99, 166</value>
+  </data>
+  <data name="&gt;&gt;loggingDelayLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="populationPerTeamNum2.TabIndex" type="System.Int32, mscorlib">
+    <value>27</value>
+  </data>
+  <data name="&gt;&gt;totalPopulationNumeric.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="logPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 831</value>
+  </data>
+  <data name="&gt;&gt;loggingOnOffPanel.Parent" xml:space="preserve">
+    <value>settingPanel</value>
+  </data>
+  <data name="panel1.TabIndex" type="System.Int32, mscorlib">
+    <value>29</value>
+  </data>
+  <data name="logRichTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>33</value>
+  </data>
+  <data name="&gt;&gt;considerSurgicalCopyLabel.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;considerSurgicalCopyPanel.Name" xml:space="preserve">
+    <value>considerSurgicalCopyPanel</value>
+  </data>
+  <data name="&gt;&gt;genderRatioPanel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;genderRatio_NoSingleRB.Parent" xml:space="preserve">
+    <value>genderRatioPanel</value>
+  </data>
+  <data name="&gt;&gt;Label_DBFilePath.Name" xml:space="preserve">
+    <value>Label_DBFilePath</value>
+  </data>
+  <data name="&gt;&gt;logPanel.Name" xml:space="preserve">
+    <value>logPanel</value>
+  </data>
+  <data name="&gt;&gt;considerSurgicalCopyNoRB.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="genderRatio_UniformRB.Location" type="System.Drawing.Point, System.Drawing">
+    <value>181, 5</value>
+  </data>
+  <data name="StartButton.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="genderRatio_NoSingleRB.Location" type="System.Drawing.Point, System.Drawing">
+    <value>226, 30</value>
+  </data>
+  <data name="radioButton_mode3.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="logRichTextBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="TotalPopulationLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>100, 110</value>
+  </data>
+  <data name="loggingDelayNum.Location" type="System.Drawing.Point, System.Drawing">
+    <value>142, 1</value>
+  </data>
+  <data name="&gt;&gt;radioButton1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="groupBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 12</value>
+  </data>
+  <data name="teamCountLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 44</value>
+  </data>
+  <data name="loggingDelayLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>36</value>
+  </data>
+  <data name="&gt;&gt;settingPanel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="genderRatio_AllRandRB.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 5</value>
+  </data>
+  <data name="whenNoSingleLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>32</value>
+  </data>
+  <data name="radioButton_mode1.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;logSettingsPanel.Name" xml:space="preserve">
+    <value>logSettingsPanel</value>
+  </data>
+  <data name="&gt;&gt;ModePanel.Name" xml:space="preserve">
+    <value>ModePanel</value>
+  </data>
+  <data name="radioButton_mode3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>270, 12</value>
+  </data>
+  <data name="&gt;&gt;genderRatio_AllRandRB.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;radioButton1.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;dontConsiderGenderRatioRB.Parent" xml:space="preserve">
+    <value>genderRatioPanel</value>
+  </data>
+  <data name="TotalPopulationLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>28</value>
+  </data>
+  <data name="genderRatio_UniformRB.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="radioButton_mode2.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="genderRatio_NoHalfOrMoreRB.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;settingPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;radioButton2.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;dbFilePathTB.Name" xml:space="preserve">
+    <value>dbFilePathTB</value>
+  </data>
+  <data name="&gt;&gt;populationPerTeamLabel2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;loggingUntilCycleNum.Name" xml:space="preserve">
+    <value>loggingUntilCycleNum</value>
+  </data>
+  <data name="&gt;&gt;populationPerTeamLabel1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;genderRatioLabel.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;openFileDialog1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.OpenFileDialog, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;genderRatio_NoHalfAndSingle.Parent" xml:space="preserve">
+    <value>genderRatioPanel</value>
+  </data>
+  <data name="&gt;&gt;radioButton_mode2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;whenNoSingleRandomRB.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;loggingLabel.Name" xml:space="preserve">
+    <value>loggingLabel</value>
+  </data>
+  <data name="&gt;&gt;numericUpDown1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;radioButton3.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;genderRatio_NoHalfAndSingle.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="loggingOffRB.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="whenNoSingleRandomRB.Location" type="System.Drawing.Point, System.Drawing">
+    <value>239, 3</value>
+  </data>
+  <data name="&gt;&gt;totalPopulationNumeric.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;totalPopulationUnitLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;genderRatioPanel.Name" xml:space="preserve">
+    <value>genderRatioPanel</value>
+  </data>
+  <data name="&gt;&gt;logRichTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RichTextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;radioButton_mode2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;logGroupBox.Parent" xml:space="preserve">
+    <value>logPanel</value>
+  </data>
+  <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>617, 500</value>
+  </data>
+  <data name="totalPopulationUnitLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>28</value>
+  </data>
+  <data name="label2.TabIndex" type="System.Int32, mscorlib">
+    <value>36</value>
+  </data>
+  <data name="whenNoSingleNoMoreThanHalfRB.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;logRichTextBox1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="teamCountNumeric.Size" type="System.Drawing.Size, System.Drawing">
+    <value>120, 23</value>
+  </data>
+  <data name="radioButton3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>270, 12</value>
+  </data>
+  <data name="&gt;&gt;considerSurgicalCopyYesRB.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel1.Name" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;radioButton_mode1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;whenNoSingleNoMoreThanHalfRB.Parent" xml:space="preserve">
+    <value>whenNoSinglePanel</value>
+  </data>
+  <data name="&gt;&gt;dbFilePath.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="loggingUntilCycleNum.TabIndex" type="System.Int32, mscorlib">
+    <value>27</value>
+  </data>
+  <data name="&gt;&gt;richTextBox1.Name" xml:space="preserve">
+    <value>richTextBox1</value>
+  </data>
+  <data name="&gt;&gt;groupBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;StartButton.Parent" xml:space="preserve">
+    <value>settingPanel</value>
+  </data>
+  <data name="&gt;&gt;populationPerTeamNum2.Name" xml:space="preserve">
+    <value>populationPerTeamNum2</value>
+  </data>
+  <data name="&gt;&gt;teamCountLabel.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;numericUpDown1.Parent" xml:space="preserve">
+    <value>logSettingsPanel</value>
+  </data>
+  <data name="considerSurgicalCopyNoRB.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;richTextBox1.Parent" xml:space="preserve">
+    <value>logGroupBox</value>
+  </data>
+  <data name="&gt;&gt;whenNoSinglePanel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="whenNoSingleNoMoreThanHalfRB.Location" type="System.Drawing.Point, System.Drawing">
+    <value>292, 3</value>
+  </data>
+  <data name="&gt;&gt;logRichTextBox.Parent" xml:space="preserve">
+    <value>logGroupBox</value>
+  </data>
+  <data name="&gt;&gt;Label_Modes.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;genderRatioLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;considerSurgicalCopyPanel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;loggingOnRB.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;radioButton_mode2.Parent" xml:space="preserve">
+    <value>ModePanel</value>
+  </data>
+  <data name="&gt;&gt;whenNoSingleLabel.Parent" xml:space="preserve">
+    <value>whenNoSinglePanel</value>
+  </data>
+  <data name="&gt;&gt;StartButton.Name" xml:space="preserve">
+    <value>StartButton</value>
+  </data>
+  <data name="logSettingsPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="Label_DBFilePath.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="&gt;&gt;ModePanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;considerSurgicalCopyYesRB.Name" xml:space="preserve">
+    <value>considerSurgicalCopyYesRB</value>
+  </data>
+  <data name="richTextBox1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;populationPerTeamNum1.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;considerSurgicalCopyLabel.Name" xml:space="preserve">
+    <value>considerSurgicalCopyLabel</value>
+  </data>
+  <data name="dontConsiderGenderRatioRB.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="populationPerTeamLabel1.TabIndex" type="System.Int32, mscorlib">
+    <value>28</value>
+  </data>
+  <data name="&gt;&gt;label2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label1.TabIndex" type="System.Int32, mscorlib">
+    <value>28</value>
+  </data>
+  <data name="Label_DBFilePath.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 43</value>
+  </data>
+  <data name="&gt;&gt;dbFilePathTB.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="&gt;&gt;Label_Modes.Name" xml:space="preserve">
+    <value>Label_Modes</value>
+  </data>
+  <data name="&gt;&gt;richTextBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RichTextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="radioButton_mode2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>185, 12</value>
+  </data>
+  <data name="logRichTextBox.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;genderRatio_AllRandRB.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;genderRatio_NoSingleRB.Name" xml:space="preserve">
+    <value>genderRatio_NoSingleRB</value>
+  </data>
+  <data name="&gt;&gt;whenNoSinglePanel.Parent" xml:space="preserve">
+    <value>settingPanel</value>
+  </data>
+  <data name="genderRatioPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>99, 178</value>
+  </data>
+  <data name="&gt;&gt;totalPopulationNumeric.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="populationPerTeamNum2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>527, 145</value>
+  </data>
+  <data name="&gt;&gt;considerSurgicalCopyPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="numericUpDown2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>142, 1</value>
+  </data>
+  <data name="&gt;&gt;whenNoSingleNoMoreThanHalfRB.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dbFilePath.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="loggingPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>99, 268</value>
+  </data>
+  <data name="&gt;&gt;totalPopulationUnitLabel.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>63, 5</value>
+  </data>
+  <data name="logRichTextBox1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="richTextBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 23</value>
+  </data>
+  <data name="considerSurgicalCopyYesRB.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;genderRatio_NoHalfOrMoreRB.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;radioButton3.Name" xml:space="preserve">
+    <value>radioButton3</value>
+  </data>
+  <data name="&gt;&gt;loggingOffRB.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;loggingOnRB.Parent" xml:space="preserve">
+    <value>loggingOnOffPanel</value>
+  </data>
+  <data name="totalPopulationNumeric.Location" type="System.Drawing.Point, System.Drawing">
+    <value>188, 108</value>
+  </data>
+  <data name="&gt;&gt;genderRatio_AllRandRB.Parent" xml:space="preserve">
+    <value>genderRatioPanel</value>
+  </data>
+  <data name="&gt;&gt;radioButton_mode3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;genderRatio_UniformRB.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;numericUpDown2.Name" xml:space="preserve">
+    <value>numericUpDown2</value>
+  </data>
+  <data name="&gt;&gt;logRichTextBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RichTextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;loggingOffRB.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="whenNoSinglePanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>99, 263</value>
+  </data>
+  <data name="&gt;&gt;radioButton2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;delayLabel.Name" xml:space="preserve">
+    <value>delayLabel</value>
+  </data>
+  <data name="&gt;&gt;StartButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="radioButton3.TabIndex" type="System.Int32, mscorlib">
+    <value>27</value>
+  </data>
+  <data name="&gt;&gt;TotalPopulationLabel.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;delayLabel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;considerSurgicalCopyPanel.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>800, 450</value>
+  </data>
+  <data name="&gt;&gt;loggingUntilCycleLabel.Parent" xml:space="preserve">
+    <value>logSettingsPanel</value>
+  </data>
+  <data name="button1.TabIndex" type="System.Int32, mscorlib">
+    <value>33</value>
+  </data>
+  <data name="&gt;&gt;dbFilePath.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;logGroupBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="considerSurgicalCopyPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>99, 69</value>
+  </data>
+  <data name="Label_Modes.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 14</value>
+  </data>
+  <data name="&gt;&gt;radioButton2.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;genderRatio_NoHalfOrMoreRB.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;logRichTextBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="openFileDialog1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>29, 13</value>
+  </metadata>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="$this.Language" type="System.Globalization.CultureInfo, System.Private.CoreLib, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
+    <value>ko-KR</value>
+  </metadata>
+</root>
