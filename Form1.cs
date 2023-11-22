@@ -1,4 +1,4 @@
-using System.Text;
+ï»¿using System.Text;
 
 namespace kmumed_pk_grouper
 {
@@ -20,7 +20,7 @@ namespace kmumed_pk_grouper
         public static bool considerSurgicalCopy = false;
         public static bool whenNoMoreThanHalf_RandomForOddsTeam = false;
         bool isLoggingOn = true;
-        List<Tuple<int, int, int>> surgicalCopyComposition; //Á¶º° ÀÎ¿ø¼ö, ÇØ´ç Á¶ °³¼ö, A copy limit·Î »ç¿ë / !!!!Count ÃÖ´ë 2°³!!!!
+        List<Tuple<int, int, int>> surgicalCopyComposition; //ì¡°ë³„ ì¸ì›ìˆ˜, í•´ë‹¹ ì¡° ê°œìˆ˜, A copy limitë¡œ ì‚¬ìš© / !!!!Count ìµœëŒ€ 2ê°œ!!!!
 
         public MainForm()
         {
@@ -28,7 +28,7 @@ namespace kmumed_pk_grouper
         }
 
         private void DoLottery() {
-            AppendLineWithTimestamp("ÃßÃ·À» À§ÇØ ÇÁ·Î±×·¥ ÃÊ±âÈ­ ÁøÇà.", true);
+            AppendLineWithTimestamp("ì¶”ì²¨ì„ ìœ„í•´ í”„ë¡œê·¸ë¨ ì´ˆê¸°í™” ì§„í–‰.", true);
             //calculate minor gender
             int maleCount = population.Where(n => n.gender.Equals('M')).Count();
             char minorGender;
@@ -36,11 +36,11 @@ namespace kmumed_pk_grouper
                 minorGender = 'F';
             else
                 minorGender = 'M';
-            AppendLineWithTimestamp($"³²¼º: {maleCount}¸í / ¿©¼º {population.Count - maleCount}¸í", true);
+            AppendLineWithTimestamp($"ë‚¨ì„±: {maleCount}ëª… / ì—¬ì„± {population.Count - maleCount}ëª…", true);
             if(genderRatioMode != 0)
-                AppendLog($"¼Ò¼öÀÎ ¼ºÀº {minorGender} ÀÌ¸ç, ¼ººñ¸¦ °í·ÁÇÏ¿© ÃßÃ·ÇÕ´Ï´Ù", true);
+                AppendLog($"ì†Œìˆ˜ì¸ ì„±ì€ {minorGender} ì´ë©°, ì„±ë¹„ë¥¼ ê³ ë ¤í•˜ì—¬ ì¶”ì²¨í•©ë‹ˆë‹¤", true);
 
-            //initialize Groups: Á¶ ABÄ«ÇÇ µî ±¸¼º »çÀü¼³Á¤
+            //initialize Groups: ì¡° ABì¹´í”¼ ë“± êµ¬ì„± ì‚¬ì „ì„¤ì •
             List<Group> groups = new List<Group>();
             calculateACopyLimits();
             foreach (Tuple<int, int, int> t in surgicalCopyComposition)
@@ -52,61 +52,61 @@ namespace kmumed_pk_grouper
                             a_limit: t.Item3
                         ));
                 }
-                AppendLog($"{t.Item1} ¸íÁ¶ {t.Item2}°³°¡ »ı¼ºµÇ¾ú½À´Ï´Ù.", true);
+                AppendLog($"{t.Item1} ëª…ì¡° {t.Item2}ê°œê°€ ìƒì„±ë˜ì—ˆìŠµë‹ˆë‹¤.", true);
                 if (considerSurgicalCopy)
-                    AppendLog($"- A Copy ÃÖ´ë {t.Item3}¸í±îÁö ¹èÁ¤µË´Ï´Ù", true);
+                    AppendLog($"- A Copy ìµœëŒ€ {t.Item3}ëª…ê¹Œì§€ ë°°ì •ë©ë‹ˆë‹¤", true);
             }
 
             if(genderRatioMode == 1)
                 calculateGenderLimits(groups);
 
-            AppendLineWithTimestamp($"ÃÖÁ¾ {groups.Count}°³ÀÇ Á¶°¡ »ı¼ºµÇ¾ú½À´Ï´Ù.", true);
+            AppendLineWithTimestamp($"ìµœì¢… {groups.Count}ê°œì˜ ì¡°ê°€ ìƒì„±ë˜ì—ˆìŠµë‹ˆë‹¤.", true);
 
 
-            //ÃßÃâ ¼ø¼­ radomize and initialize
+            //ì¶”ì¶œ ìˆœì„œ radomize and initialize
             List<int> seq;
             int cycleCount = 0;
             bool printResult = true;
-            AppendLineWithTimestamp($"ÃÊ±âÈ­ ¿Ï·á. ÃßÃ·À» ½ÃÀÛÇÕ´Ï´Ù.", true);
+            AppendLineWithTimestamp($"ì´ˆê¸°í™” ì™„ë£Œ. ì¶”ì²¨ì„ ì‹œì‘í•©ë‹ˆë‹¤.", true);
             do
             {
-                //cycle¸¶´Ù ÇÊ¿äÇÑ ÃÊ±âÈ­
+                //cycleë§ˆë‹¤ í•„ìš”í•œ ì´ˆê¸°í™”
                 cycleCount++;
                 printResult = true;
                 groups.ForEach(g => g.Reset());
-                //cycle ¸¶´Ù »ç¶÷ ÃßÃâ¼ø¼­ randomize
+                //cycle ë§ˆë‹¤ ì‚¬ëŒ ì¶”ì¶œìˆœì„œ randomize
                 population = population.OrderBy(x => Random.Shared.Next()).ToList();
 
-                AppendLineWithTimestamp($"{cycleCount}¹øÂ° cycle ÃßÃ·À» ½ÃÀÛÇÕ´Ï´Ù.", false);
+                AppendLineWithTimestamp($"{cycleCount}ë²ˆì§¸ cycle ì¶”ì²¨ì„ ì‹œì‘í•©ë‹ˆë‹¤.", false);
                 int current = 0;
                 foreach (Node n in population)
                 {
                     current++;
-                    //»ç¶÷¸¶´Ù group ½Ãµµ ¼ø¼­ randomize
+                    //ì‚¬ëŒë§ˆë‹¤ group ì‹œë„ ìˆœì„œ randomize
                     seq = GetTeamTrySequence();
                     for (int i = 0; i < groups.Count; i++)
                     {
                         if (groups[seq[i]].Add(n))
                         {
-                            AppendLineWithTimestamp($"{cycleCount}-{current}; {n.HandleName}°¡ {seq[i] + 1}Á¶¿¡ ¹èÁ¤µÇ¾ú½À´Ï´Ù", false);
+                            AppendLineWithTimestamp($"{cycleCount}-{current}; {n.HandleName}ê°€ {seq[i] + 1}ì¡°ì— ë°°ì •ë˜ì—ˆìŠµë‹ˆë‹¤", false);
                             if(isLoggingOn && cycleCount - 1 < loggingUntilCycleNum.Value)
                                 Thread.Sleep((int)(loggingDelayNum.Value * 1000));
                             break;
                         }
                         if (i == groups.Count - 1)
                         {
-                            AppendLineWithTimestamp("!! Æ¯Á¤ÀÎÀÌ ¸ğµç Á¶¿¡ ´ëÇØ ¹èÁ¤µÉ ¼ö ¾ø¾î ´Ù½Ã ÃßÃ·ÇØ¾ß ÇÕ´Ï´Ù!!", false);
+                            AppendLineWithTimestamp("!! íŠ¹ì •ì¸ì´ ëª¨ë“  ì¡°ì— ëŒ€í•´ ë°°ì •ë  ìˆ˜ ì—†ì–´ ë‹¤ì‹œ ì¶”ì²¨í•´ì•¼ í•©ë‹ˆë‹¤!!", false);
                             printResult = false;
                         }
                     }
                     if (!printResult)
-                        break; //¹èÁ¤ ºÒ°¡ÇÑ case ¹ß»ıÇÑ °æ¿ì Á¾·á ÈÄ ÀçÃßÃ·
+                        break; //ë°°ì • ë¶ˆê°€í•œ case ë°œìƒí•œ ê²½ìš° ì¢…ë£Œ í›„ ì¬ì¶”ì²¨
                 }
             } while (!printResult && cycleCount < 100);
 
             if (printResult)
             {
-                AppendLineWithTimestamp($"{cycleCount}È¸ ÃßÃ· °á°ú ÃßÃ·¿¡ ¼º°øÇß½À´Ï´Ù", true);
+                AppendLineWithTimestamp($"{cycleCount}íšŒ ì¶”ì²¨ ê²°ê³¼ ì¶”ì²¨ì— ì„±ê³µí–ˆìŠµë‹ˆë‹¤", true);
                 StartButton.Enabled = false;
                 foreach (Group g in groups)
                 {
@@ -116,7 +116,7 @@ namespace kmumed_pk_grouper
             }
             else
             {
-                AppendLineWithTimestamp($"{cycleCount}È¸ ÃßÃ· °á°ú ÃßÃ·¿¡ ½ÇÆĞÇß½À´Ï´Ù. ¼ººñ °í·Á Á¶°ÇÀ» º¯°æÇÏ°Å³ª ´Ù½Ã ½ÃµµÇØÁÖ¼¼¿ä.", true);
+                AppendLineWithTimestamp($"{cycleCount}íšŒ ì¶”ì²¨ ê²°ê³¼ ì¶”ì²¨ì— ì‹¤íŒ¨í–ˆìŠµë‹ˆë‹¤. ì„±ë¹„ ê³ ë ¤ ì¡°ê±´ì„ ë³€ê²½í•˜ê±°ë‚˜ ë‹¤ì‹œ ì‹œë„í•´ì£¼ì„¸ìš”.", true);
             }
         }
 
@@ -124,9 +124,9 @@ namespace kmumed_pk_grouper
         private void dbFilePath_Click(object sender, EventArgs e)
         {
             string filePath = ShowGeneralFileOpenDialog(
-                title: "µ¥ÀÌÅÍ ÆÄÀÏ ¼±ÅÃ",
+                title: "ë°ì´í„° íŒŒì¼ ì„ íƒ",
                 initialDirectory: "%HOMEPATH%\\Desktop",
-                filter: "½°Ç¥·Î ±¸ºĞµÈ °ª ÆÄÀÏ (*.csv)|*.csv",
+                filter: "ì‰¼í‘œë¡œ êµ¬ë¶„ëœ ê°’ íŒŒì¼ (*.csv)|*.csv",
                 defaultExt: "csv"
                 );
             if (Path.Exists(filePath))
@@ -135,7 +135,7 @@ namespace kmumed_pk_grouper
             }
             else
             {
-                MessageBox.Show("ÆÄÀÏÀÌ ¼±ÅÃµÇÁö ¾Ê¾Ò°Å³ª Á¸ÀçÇÏÁö ¾Ê½À´Ï´Ù. ´Ù½Ã ½ÃµµÇØÁÖ¼¼¿ä.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("íŒŒì¼ì´ ì„ íƒë˜ì§€ ì•Šì•˜ê±°ë‚˜ ì¡´ì¬í•˜ì§€ ì•ŠìŠµë‹ˆë‹¤. ë‹¤ì‹œ ì‹œë„í•´ì£¼ì„¸ìš”.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -146,7 +146,7 @@ namespace kmumed_pk_grouper
             int localPersonPerTeam = (int)Math.Ceiling(totalCount / teamCountNumeric.Value);
             if (totalCount == localPersonPerTeam * teamCount)
             {
-                populationPerTeamLabel1.Text = $"{localPersonPerTeam}¸íÁ¶";
+                populationPerTeamLabel1.Text = $"{localPersonPerTeam}ëª…ì¡°";
                 populationPerTeamNum1.Value = teamCount;
                 populationPerTeamLabel2.Visible = false;
                 populationPerTeamNum2.Visible = false;
@@ -158,8 +158,8 @@ namespace kmumed_pk_grouper
             }
             else
             {
-                populationPerTeamLabel1.Text = $"{localPersonPerTeam - 1}¸íÁ¶";
-                populationPerTeamLabel2.Text = $"{localPersonPerTeam}¸íÁ¶";
+                populationPerTeamLabel1.Text = $"{localPersonPerTeam - 1}ëª…ì¡°";
+                populationPerTeamLabel2.Text = $"{localPersonPerTeam}ëª…ì¡°";
                 populationPerTeamNum1.Value = teamCount * localPersonPerTeam - totalCount;
                 populationPerTeamNum2.Value = teamCount - populationPerTeamNum1.Value;
                 populationPerTeamLabel2.Visible = true;
@@ -283,7 +283,7 @@ namespace kmumed_pk_grouper
         {
             if (!Path.Exists(dbFilePathTB.Text))
             { 
-                MessageBox.Show("µ¥ÀÌÅÍ ÆÄÀÏÀÌ ¼±ÅÃµÇÁö ¾Ê¾Ò°Å³ª Á¸ÀçÇÏÁö ¾Ê½À´Ï´Ù. ´Ù½Ã ½ÃµµÇØÁÖ¼¼¿ä.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("ë°ì´í„° íŒŒì¼ì´ ì„ íƒë˜ì§€ ì•Šì•˜ê±°ë‚˜ ì¡´ì¬í•˜ì§€ ì•ŠìŠµë‹ˆë‹¤. ë‹¤ì‹œ ì‹œë„í•´ì£¼ì„¸ìš”.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
             Cursor.Current = Cursors.WaitCursor;
@@ -295,16 +295,16 @@ namespace kmumed_pk_grouper
 
         #region Utility
         /// <summary>
-        /// ÀÏ¹İÀû ¿ëµµ·Î »ç¿ëÇÒ ¼ö ÀÖ´Â ÆÄÀÏ ¼±ÅÃ ´ÙÀÌ¾ó·Î±×ÀÔ´Ï´Ù.
+        /// ì¼ë°˜ì  ìš©ë„ë¡œ ì‚¬ìš©í•  ìˆ˜ ìˆëŠ” íŒŒì¼ ì„ íƒ ë‹¤ì´ì–¼ë¡œê·¸ì…ë‹ˆë‹¤.
         /// </summary>
-        /// <param name="title">´ëÈ­ »óÀÚÀÇ Á¦¸ñ Ç¥½ÃÁÙ¿¡ ³ªÅ¸³¾ ¹®ÀÚ¿­ÀÔ´Ï´Ù.</param>
-        /// <param name="initialDirectory">´ëÈ­ »óÀÚÀÇ ÃÊ±â µğ·ºÅÍ¸®ÀÔ´Ï´Ù. \·Î ³¡³³´Ï´Ù.</param>
-        /// <param name="filename">´ëÈ­ »óÀÚ¿¡ Ã³À½ Ç¥½ÃµÈ ÆÄÀÏ ¶Ç´Â »ç¿ëÀÚ°¡ ¼±ÅÃÇÑ ÆÄÀÏ ÀÌ¸§ÀÔ´Ï´Ù.</param>
-        /// <param name="defaultExt">±âº» ÆÄÀÏ ÀÌ¸§ È®Àå¸íÀÔ´Ï´Ù. »ç¿ëÀÚ°¡ È®Àå¸íÀ» ÀÔ·ÂÇÏÁö ¾Ê°í ÆÄÀÏÀ» ¼±ÅÃÇÏ¸é ³¡¿¡ ÀÌ È®Àå¸íÀÌ Ãß°¡µË´Ï´Ù.</param>
-        /// <param name="filter">´ëÈ­ »óÀÚ¿¡ Ç¥½ÃÇÒ ÆÄÀÏ ÇÊÅÍÀÔ´Ï´Ù(¿¹ : "Excel files (*.xlsx)|*.xlsx|All files (*.*)|*.*")</param>
-        /// <param name="filterIndex">´ëÈ­ »óÀÚ¿¡¼­ ¼±ÅÃÇÑ ÆÄÀÏ ÇÊÅÍÀÇ ÀÎµ¦½ºÀÔ´Ï´Ù. Ã¹ ¹øÂ° ÀÎµ¦½º´Â 1ÀÔ´Ï´Ù.</param>
-        /// <returns>ÆÄÀÏÀÇ Àı´ë °æ·Î(¿¹ : "C:\Users\filename.ext")¸¦ ¹İÈ¯ÇÕ´Ï´Ù.</returns>
-        public static string ShowGeneralFileOpenDialog(string title = "ÆÄÀÏÀ» ¼±ÅÃÇØÁÖ¼¼¿ä", string initialDirectory = "MyComputer", string? filename = null, string? defaultExt = null, string filter = "¸ğµç ÆÄÀÏ(*.*)|*.*", int filterIndex = 1)
+        /// <param name="title">ëŒ€í™” ìƒìì˜ ì œëª© í‘œì‹œì¤„ì— ë‚˜íƒ€ë‚¼ ë¬¸ìì—´ì…ë‹ˆë‹¤.</param>
+        /// <param name="initialDirectory">ëŒ€í™” ìƒìì˜ ì´ˆê¸° ë””ë ‰í„°ë¦¬ì…ë‹ˆë‹¤. \ë¡œ ëë‚©ë‹ˆë‹¤.</param>
+        /// <param name="filename">ëŒ€í™” ìƒìì— ì²˜ìŒ í‘œì‹œëœ íŒŒì¼ ë˜ëŠ” ì‚¬ìš©ìê°€ ì„ íƒí•œ íŒŒì¼ ì´ë¦„ì…ë‹ˆë‹¤.</param>
+        /// <param name="defaultExt">ê¸°ë³¸ íŒŒì¼ ì´ë¦„ í™•ì¥ëª…ì…ë‹ˆë‹¤. ì‚¬ìš©ìê°€ í™•ì¥ëª…ì„ ì…ë ¥í•˜ì§€ ì•Šê³  íŒŒì¼ì„ ì„ íƒí•˜ë©´ ëì— ì´ í™•ì¥ëª…ì´ ì¶”ê°€ë©ë‹ˆë‹¤.</param>
+        /// <param name="filter">ëŒ€í™” ìƒìì— í‘œì‹œí•  íŒŒì¼ í•„í„°ì…ë‹ˆë‹¤(ì˜ˆ : "Excel files (*.xlsx)|*.xlsx|All files (*.*)|*.*")</param>
+        /// <param name="filterIndex">ëŒ€í™” ìƒìì—ì„œ ì„ íƒí•œ íŒŒì¼ í•„í„°ì˜ ì¸ë±ìŠ¤ì…ë‹ˆë‹¤. ì²« ë²ˆì§¸ ì¸ë±ìŠ¤ëŠ” 1ì…ë‹ˆë‹¤.</param>
+        /// <returns>íŒŒì¼ì˜ ì ˆëŒ€ ê²½ë¡œ(ì˜ˆ : "C:\Users\filename.ext")ë¥¼ ë°˜í™˜í•©ë‹ˆë‹¤.</returns>
+        public static string ShowGeneralFileOpenDialog(string title = "íŒŒì¼ì„ ì„ íƒí•´ì£¼ì„¸ìš”", string initialDirectory = "MyComputer", string? filename = null, string? defaultExt = null, string filter = "ëª¨ë“  íŒŒì¼(*.*)|*.*", int filterIndex = 1)
         {
             OpenFileDialog openFileDialog = new OpenFileDialog();
             openFileDialog.Title = title;
@@ -314,10 +314,10 @@ namespace kmumed_pk_grouper
             openFileDialog.DefaultExt = defaultExt;
             openFileDialog.FilterIndex = filterIndex;
             DialogResult dr = openFileDialog.ShowDialog();
-            //OK¹öÆ° Å¬¸¯½Ã
+            //OKë²„íŠ¼ í´ë¦­ì‹œ
             if (dr == DialogResult.OK)
             {
-                //File°æ·Î¿Í File¸íÀ» ¸ğµÎ ¹İÈ¯
+                //Fileê²½ë¡œì™€ Fileëª…ì„ ëª¨ë‘ ë°˜í™˜
                 return openFileDialog.FileName;
             }
             return null;
@@ -332,7 +332,7 @@ namespace kmumed_pk_grouper
                 try
                 {
                     string[] split = d.Split(',');
-                    if (split[0].Equals("ÇĞ¹ø")) continue; //Ã¹ Çà ¹«½Ã
+                    if (split[0].Equals("í•™ë²ˆ")) continue; //ì²« í–‰ ë¬´ì‹œ
                     table.Add(new Node(split));
                 }
                 catch (ArgumentException ex)
@@ -343,11 +343,11 @@ namespace kmumed_pk_grouper
 
             table.GroupBy(i => i.Name)
                 .Where(g => g.Count() > 1)
-                .Select(g => g.Key) // Áßº¹µÇ´Â ÀÌ¸§ Ã£¾Æ¼­
+                .Select(g => g.Key) // ì¤‘ë³µë˜ëŠ” ì´ë¦„ ì°¾ì•„ì„œ
                 .ToList()
                 .ForEach(s => 
                     {
-                        table.FindAll(n => n.Name.Equals(s)) //Instance¾È¿¡¼­ ÇĞ¹ø º´±âÇÏµµ·Ï º¯°æ
+                        table.FindAll(n => n.Name.Equals(s)) //Instanceì•ˆì—ì„œ í•™ë²ˆ ë³‘ê¸°í•˜ë„ë¡ ë³€ê²½
                             .ForEach(n => n.Name = $"{n.Name}({n.Id})");
                     }
                 );
@@ -356,13 +356,13 @@ namespace kmumed_pk_grouper
 
         private void SaveCSV(List<Group> groups)
         {
-            AppendLineWithTimestamp($"ÃßÃ· °á°ú¸¦ ÀúÀåÇÕ´Ï´Ù.", true);
+            AppendLineWithTimestamp($"ì¶”ì²¨ ê²°ê³¼ë¥¼ ì €ì¥í•©ë‹ˆë‹¤.", true);
             //Header
             int maxPPT = groups.Max(g => g.limit);
-            string result = "Á¶,³²,¿©,";
+            string result = "ì¡°,ë‚¨,ì—¬,";
             string[] headerPersons = new string[maxPPT];
             for (int i = 0; i < maxPPT; i++)
-                headerPersons[i] = $"Á¶¿ø{i + 1}";
+                headerPersons[i] = $"ì¡°ì›{i + 1}";
             result += $"{string.Join(",", headerPersons)}\n";
 
             //Body
@@ -370,19 +370,19 @@ namespace kmumed_pk_grouper
             groups.ForEach(g => result += $"{g.PrintForCSV()}\n");
 
             //Save
-            string filename = $"{Environment.GetFolderPath(Environment.SpecialFolder.Desktop)}\\½Ç½ÀÁ¶ ÃßÃ· °á°ú - {DateTime.Now.ToString("yyyyMMdd hhmmss")}.csv";
+            string filename = $"{Environment.GetFolderPath(Environment.SpecialFolder.Desktop)}\\ì‹¤ìŠµì¡° ì¶”ì²¨ ê²°ê³¼ - {DateTime.Now.ToString("yyyyMMdd hhmmss")}.csv";
             using (StreamWriter file = new StreamWriter(filename))
             {
                 file.Write(result);
             }
-            AppendLog($"{filename}¿¡ ÃßÃ· °á°ú°¡ ÀúÀåµÇ¾ú½À´Ï´Ù.", true);
+            AppendLog($"{filename}ì— ì¶”ì²¨ ê²°ê³¼ê°€ ì €ì¥ë˜ì—ˆìŠµë‹ˆë‹¤.", true);
         }
 
         void calculateACopyLimits() {
             if (!considerSurgicalCopy) return;
 
-            //Á¶´ç ÀÎ¿ø¼ö, ÇØ´ç Á¶ °³¼ö, a Ä«ÇÇ ¸®¹ÔÀ¸·Î »ç¿ë
-            //Â¦¼öÀÎ ÀÎ¿ø Á¶ ¸ÕÀú ÇÒ´ç
+            //ì¡°ë‹¹ ì¸ì›ìˆ˜, í•´ë‹¹ ì¡° ê°œìˆ˜, a ì¹´í”¼ ë¦¬ë°‹ìœ¼ë¡œ ì‚¬ìš©
+            //ì§ìˆ˜ì¸ ì¸ì› ì¡° ë¨¼ì € í• ë‹¹
             if (surgicalCopyComposition.Any(t => t.Item1 % 2 == 0))
             {
                 Tuple<int, int, int> evenTuple = surgicalCopyComposition.Where(t => t.Item1 % 2 == 0).First();
@@ -390,7 +390,7 @@ namespace kmumed_pk_grouper
                 surgicalCopyComposition.Remove(evenTuple);
             }
 
-            //È¦¼öÀÎ Á¶ ÇÒ´ç
+            //í™€ìˆ˜ì¸ ì¡° í• ë‹¹
             if (surgicalCopyComposition.Any(t => t.Item1 % 2 == 1))
             {
                 Tuple<int, int, int> oddTuple = surgicalCopyComposition.Where(t => t.Item1 % 2 == 1).First();
@@ -445,7 +445,7 @@ namespace kmumed_pk_grouper
         private List<int> GetTeamTrySequence()
         {
             List<int> seq;
-            // ·£´ı
+            // ëœë¤
             seq = new List<int>();
             for (int i = 0; i < (int)teamCountNumeric.Value; i++)
             {
@@ -464,8 +464,8 @@ namespace kmumed_pk_grouper
         }
 
         private void Legacy(char minorGender) {
-            //¾Ë°í¸®Áò Â¥´Â °úÁ¤¿¡¼­ ³ª¿Â ±¸ ÄÚµå º¸Á¸¿ë ÇÔ¼ö
-            if (genderRatioMode > 2) //´Üµ¶±¸¼º ¹èÁ¦ È¤Àº º¹ÇÕ¹èÁ¦ÀÎ °æ¿ì ¼Ò¼ö ¼ºº°ºÎÅÍ ÃßÃ·
+            //ì•Œê³ ë¦¬ì¦˜ ì§œëŠ” ê³¼ì •ì—ì„œ ë‚˜ì˜¨ êµ¬ ì½”ë“œ ë³´ì¡´ìš© í•¨ìˆ˜
+            if (genderRatioMode > 2) //ë‹¨ë…êµ¬ì„± ë°°ì œ í˜¹ì€ ë³µí•©ë°°ì œì¸ ê²½ìš° ì†Œìˆ˜ ì„±ë³„ë¶€í„° ì¶”ì²¨
             {
                 var grouping = population.GroupBy(person => person.gender);
                 if (minorGender.Equals('M'))
@@ -483,7 +483,7 @@ namespace kmumed_pk_grouper
 
 /*            if (genderRatioMode > 2)
             {
-                //¼ººñ¿¡¼­ ´Üµ¶±¸¼º ¹èÁ¦ ÇÊ¿äÇÑ °æ¿ì, minorGender ¸¹Àº ÂÊ¿¡ ¿ì¼±¼øÀ§·Î ¹èÁ¤
+                //ì„±ë¹„ì—ì„œ ë‹¨ë…êµ¬ì„± ë°°ì œ í•„ìš”í•œ ê²½ìš°, minorGender ë§ì€ ìª½ì— ìš°ì„ ìˆœìœ„ë¡œ ë°°ì •
                 seq = groups
                     .Select(g => new
                     {
