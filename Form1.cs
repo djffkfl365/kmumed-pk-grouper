@@ -44,6 +44,7 @@ namespace kmumed_pk_grouper
             //initialize Groups: 조 AB카피 등 구성 사전설정
             List<Group> groups = new List<Group>();
             calculateACopyLimits();
+            surgicalCopyComposition = surgicalCopyComposition.OrderByDescending(t => t.Item1).ToList();
             foreach (Tuple<int, int, int> t in surgicalCopyComposition)
             {
                 for (int i = 0; i < t.Item2; i++) {
@@ -60,8 +61,6 @@ namespace kmumed_pk_grouper
 
             if(genderRatioMode == 1)
                 calculateGenderLimits(groups);
-
-            groups = groups.OrderByDescending(g => g.limit).ToList();
 
             AppendLineWithTimestamp($"최종 {groups.Count}개의 조가 생성되었습니다.", true);
 
