@@ -1,4 +1,5 @@
-﻿using System.Text;
+﻿using System.Linq.Expressions;
+using System.Text;
 
 namespace kmumed_pk_grouper
 {
@@ -59,6 +60,8 @@ namespace kmumed_pk_grouper
 
             if(genderRatioMode == 1)
                 calculateGenderLimits(groups);
+
+            groups = groups.OrderByDescending(g => g.limit).ToList();
 
             AppendLineWithTimestamp($"최종 {groups.Count}개의 조가 생성되었습니다.", true);
 
@@ -265,14 +268,27 @@ namespace kmumed_pk_grouper
 
         private void dbFilePathTB_TextChanged(object sender, EventArgs e)
         {
-            population = LoadCSV(dbFilePathTB.Text);
-            if (population.Count > 0)
+            if (string.IsNullOrEmpty(dbFilePathTB.Text))
+                return;
+
+            try
+            {
+                population = LoadCSV(dbFilePathTB.Text);
+            }
+            catch (FileNotFoundException ex)
+            {
+                AppendLineWithTimestamp($"{ex.Message}", true);
+            }
+
+            if (population != null && population.Count > 0)
                 totalPopulationNumeric.Value = population.Count;
             else
             {
                 AppendLineWithTimestamp("제대로 인식된 사람이 없어 추첨을 진행할 수 없습니다. 파일 오류를 확인한 후 다시 시도해주세요.", true);
                 dbFilePathTB.Text = "";
+                return;
             }
+
             if (population.Where(p => p.gender.Equals('F')).Count() % 2 != 0 || population.Where(p => p.gender.Equals('M')).Count() % 2 != 0)
             {
                 genderRatio_NoSingleRB.Enabled = false;
@@ -333,9 +349,12 @@ namespace kmumed_pk_grouper
         {
             string[] buff;
             if (File.Exists(fileName))
+            {
+                AppendLog($"{fileName}을 로드합니다", true);
                 buff = File.ReadAllLines(fileName, Encoding.UTF8);
+            }
             else
-                return null;
+                throw new FileNotFoundException($"파일명 '{fileName}'이 존재하지 않습니다.");
 
             if (buff[0].Split(',')[0].Equals("�й�"))
             {
@@ -347,13 +366,13 @@ namespace kmumed_pk_grouper
             }
 
             List<Node> table = new List<Node>();
-            foreach (string d in buff)
+            foreach (var d in buff.Select((value, index) => (value, index)))
             {
                 try
                 {
-                    string[] split = d.Split(',');
+                    string[] split = d.value.Split(',');
                     if (split[0].Equals("학번")) continue; //첫 행 무시
-                    table.Add(new Node(split));
+                    table.Add(new Node(split, d.index));
                 }
                 catch (ArgumentException ex)
                 {

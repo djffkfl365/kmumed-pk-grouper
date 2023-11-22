@@ -12,12 +12,12 @@
     <Copyright>2023 izuku39</Copyright>
     <PackageIcon>의대 mark(칼라) - 배경투명화 256.png</PackageIcon>
     <PackageReadmeFile>readme.md</PackageReadmeFile>
-    <AssemblyVersion>0.0.1</AssemblyVersion>
-    <FileVersion>0.0.1.1</FileVersion>
+    <AssemblyVersion>0.0.2</AssemblyVersion>
+    <FileVersion>0.0.2.1</FileVersion>
     <Company>계명대학교 의과대학 학생 개인</Company>
     <Authors>izuku39</Authors>
     <Title>계명의대 PK 조추첨 프로그램</Title>
-    <Version>0.0.1</Version>
+    <Version>0.0.2</Version>
     <Product>계명의대 PK 조추첨 프로그램</Product>
     <PackageProjectUrl>https://github.com/djffkfl365/kmumed-pk-grouper</PackageProjectUrl>
   </PropertyGroup>

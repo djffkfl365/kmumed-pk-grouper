@@ -14,11 +14,11 @@
         public readonly char surgeryCopy;
         public readonly string HandleName;
 
-        public Node(string[] split)
+        public Node(string[] split, int index)
         {
-            if (split == null) throw new ArgumentNullException("데이터가 비어있습니다.");
+            if (split == null) throw new ArgumentNullException($"{index + 1}번째 행의 데이터가 비어있습니다.");
             if (split.Length < 6) throw new ArgumentOutOfRangeException("데이터 파일의 행이 6개 미만입니다.");
-            if (string.IsNullOrWhiteSpace(split[0])) throw new ArgumentNullException("학번이 비어 있습니다.");
+            if (string.IsNullOrWhiteSpace(split[0])) throw new ArgumentNullException($"{index + 1}번째 행의 학번이 비어 있습니다.");
             Id = int.Parse(split[0].Trim());
             if (string.IsNullOrWhiteSpace(split[1])) throw new ArgumentNullException($"학번 {Id}의 이름이 비어 있습니다.");
             Name = split[1].Trim();
