@@ -266,7 +266,13 @@ namespace kmumed_pk_grouper
         private void dbFilePathTB_TextChanged(object sender, EventArgs e)
         {
             population = LoadCSV(dbFilePathTB.Text);
-            totalPopulationNumeric.Value = population.Count;
+            if (population.Count > 0)
+                totalPopulationNumeric.Value = population.Count;
+            else
+            {
+                AppendLineWithTimestamp("제대로 인식된 사람이 없어 추첨을 진행할 수 없습니다. 파일 오류를 확인한 후 다시 시도해주세요.", true);
+                dbFilePathTB.Text = "";
+            }
             if (population.Where(p => p.gender.Equals('F')).Count() % 2 != 0 || population.Where(p => p.gender.Equals('M')).Count() % 2 != 0)
             {
                 genderRatio_NoSingleRB.Enabled = false;
@@ -325,7 +331,21 @@ namespace kmumed_pk_grouper
 
         List<Node> LoadCSV(string fileName)
         {
-            string[] buff = File.ReadAllLines(fileName, Encoding.UTF8);
+            string[] buff;
+            if (File.Exists(fileName))
+                buff = File.ReadAllLines(fileName, Encoding.UTF8);
+            else
+                return null;
+
+            if (buff[0].Split(',')[0].Equals("�й�"))
+            {
+                int euckrCodePage = 51949;  // euc-kr 코드 번호
+                Encoding.RegisterProvider(CodePagesEncodingProvider.Instance);
+                Encoding euckr = Encoding.GetEncoding(euckrCodePage);
+
+                buff = File.ReadAllLines(fileName, Encoding.GetEncoding("euc-kr"));
+            }
+
             List<Node> table = new List<Node>();
             foreach (string d in buff)
             {
