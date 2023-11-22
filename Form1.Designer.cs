@@ -456,6 +456,7 @@
             // 
             resources.ApplyResources(this.logRichTextBox, "logRichTextBox");
             this.logRichTextBox.Name = "logRichTextBox";
+            this.logRichTextBox.ReadOnly = true;
             // 
             // MainForm
             // 
